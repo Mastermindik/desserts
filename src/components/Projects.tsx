@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import "../styles/Projects.scss"
 import { ICake } from "../models/ICake";
 import Card from "./Card";
 
