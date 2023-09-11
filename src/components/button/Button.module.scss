@@ -1,0 +1,58 @@
+.btn {
+    width: fit-content;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    color: black;
+    background: #FED84C;
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s;
+    
+
+    &:hover {
+        color: #fed74c;
+        border-color: #FED84C;
+        background: none;
+    }
+
+    &[data-size=large] {
+        padding: 1.88rem 3.12rem;
+    }
+    
+    &[data-size=medium] {
+        padding: 1.25rem 2.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 1rem;
+        &[data-size=large]{
+            padding: 1.5rem ;
+        }
+        &[data-size=medium] {
+            padding: .5rem 1rem;
+        }
+
+    }
+}
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1rem;
+        &[data-size=large] {
+            padding: .7rem 1rem;
+        }
+
+    }
+}
+@media (max-width: 425px) {
+    .btn {
+        font-size: .9rem;
+        &[data-size=large] {
+            padding: .3rem .5rem;
+        }
+
+    }
+}
