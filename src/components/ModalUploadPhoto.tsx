@@ -5,12 +5,15 @@ type ModalUploadPhotoProps = {
   setModalVisible: Dispatch<React.SetStateAction<boolean>>
 }
 
-function ModalUploadPhoto({setModalVisible}: ModalUploadPhotoProps) {
+function ModalUploadPhoto({ setModalVisible }: ModalUploadPhotoProps) {
   const [imgUrl, setImgUrl] = useState<string>("");
+  const [imgName, setImgName] = useState<string>("");
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     const image = e.target.files?.[0];
+
     if (image) {
+      setImgName(image.name);
       setImgUrl(URL.createObjectURL(image));
     }
   }
@@ -32,7 +35,10 @@ function ModalUploadPhoto({setModalVisible}: ModalUploadPhotoProps) {
               </div>}
           </div>
           <input className="hidden" type="file" name="file" accept="image/*" id="fileinput" onChange={e => handleChange(e)} />
-          <Button size="medium" className="" onClick={handleSelect} >Обрати файл</Button>
+          <div className="flex items-center gap-1">
+            <Button size="medium" className="" onClick={handleSelect} >Обрати файл</Button>
+            <p>{imgName.length ? imgName : "Файл не вибрано"}</p>
+          </div>
           <Button size="medium">Відправити</Button>
         </form>
         <button className="close absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center bg-red-700 text-white rounded-full border-white border-solid border-2" onClick={() => setModalVisible(false)}>
