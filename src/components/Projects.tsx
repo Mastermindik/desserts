@@ -12,7 +12,7 @@ function Projects() {
   
 
   return (
-    <section className="projects bg-white font-medium">
+    <section className="projects bg-white font-medium" id="cakes">
       <div className="container 2xl:max-w-6xl">
         <h2 className=" text-xl md:text-3xl xl:text-5xl mb-20 text-center" >Для будь-яких подій та дорогих вам людей</h2>
         <div className="cakes flex flex-wrap items-stretch gap-y-4">

@@ -3,6 +3,10 @@ import styles from "./Home.module.scss"
 import Button from '../button/Button'
 
 function Home() {
+  function handleClick() {
+    document.getElementById("cakes")?.scrollIntoView({behavior: "smooth"});
+  }
+
   return <div className={styles.main}>
     <Header />
     <section className='home text-white pt-20 pb-40 lg:pt-44 xl:pb-96'>
@@ -14,7 +18,7 @@ function Home() {
             <div className="subtitle text-lg xl:text-2xl">Приготуємо за 3 години на день замовлення. Доставка на авто у холодильнику.</div>
           </div>
           <div className="flex items-center gap-5">
-            <Button>Перейти до каталогу</Button>
+            <Button onClick={handleClick} >Перейти до каталогу</Button>
             <p className="text-green-900 bg font-semibold xl:text-white">9 різних видів на вибір</p>
           </div>
         </div>

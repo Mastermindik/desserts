@@ -1,7 +1,7 @@
 
 function Portfolio() {
   return (
-    <section className="portfolio">
+    <section className="portfolio" >
       <div className="container max-w-6xl text-center mb-20">
         <h2 className="text-xl md:text-3xl xl:text-5xl m-0 mb-3">Зробили понад 3.000 замовлень за 2 роки</h2>
         <h3 className="text-sm md:text-lg xl:text-2xl m-0">Перегляньте фото реальних замовлень з нашого instagram</h3>
