@@ -3,10 +3,15 @@ import cloudUp from "../assets/clouds/cloud-up.png"
 import cloudDown from "../assets/clouds/cloud-down.png"
 import phone from "../assets/phone.png"
 import Button from "./button/Button"
+import ModalUploadPhoto from "./ModalUploadPhoto"
+import { useState } from "react"
 
 function OrderByPhoto() {
+  const [modalVisible, setModalVisible] = useState<boolean>(false);
+
   return (
     <section className="order-by-bhoto relative">
+      {modalVisible ? <ModalUploadPhoto setModalVisible={setModalVisible} /> : ""}
       <div className="cloud-up">
         <img src={cloudUp} alt="" className="w-full"/>
       </div>
@@ -20,7 +25,7 @@ function OrderByPhoto() {
             <div className="text-lg sm:text-2xl xl:text-5xl font-medium">Приготуємо замовлення будь-якої складності по фото чи ескізу</div>
             <div className="">Завантажте фотографію або ескіз капкейків і ми розрахуємо вартість за 30 хвилин</div>
           </div>
-          <Button>Завантажити фото</Button>
+          <Button onClick={() => setModalVisible(true)}>Завантажити фото</Button>
         </div>
       </div>
       <div className="cloud-down z-10 relative">

@@ -8,7 +8,7 @@ function Footer() {
         <img src={cloudUp} alt="" className="w-full" />
       </div>
       <div className="container max-w-6xl">
-        <form action="#" className="bg-white p-4 sm:p-6 lg:p-16 flex flex-col items-center gap-6 text-center">
+        <form  className="bg-white p-4 sm:p-6 lg:p-16 flex flex-col items-center gap-6 text-center" onSubmit={e => e.preventDefault()}>
           <h3 className="text-xl lg:text-4xl">Щоб зробити замовлення, вкажіть ваш телефон</h3>
           <div className="text-base lg:text-xl">Ми передзвонимо протягом 15 хвилин, щоб уточнити ваші побажання</div>
           <div className="flex flex-col sm:flex-row gap-5 w-3/4">
