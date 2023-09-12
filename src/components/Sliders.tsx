@@ -29,7 +29,7 @@ function Sliders() {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   };
-  
+
   return (
     <div className="text-black ">
       <Slider {...settings}  >
