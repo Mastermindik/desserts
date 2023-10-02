@@ -1,5 +1,5 @@
-import confectioner from "../assets/confectioner.png"
-import Button from "./button/Button"
+import confectioner from "../../assets/confectioner.png"
+import Button from "../button/Button"
 
 function Confectioner() {
   return (

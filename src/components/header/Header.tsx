@@ -1,5 +1,5 @@
-import geo from "../assets/header/Icon.svg"
-import phone from "../assets/header/phone.svg"
+import geo from "../../assets/header/Icon.svg"
+import phone from "../../assets/header/phone.svg"
 
 function Header() {
   return (

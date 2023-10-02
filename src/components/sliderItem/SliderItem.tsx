@@ -1,5 +1,5 @@
-import qoutes from "../assets/qoutes.svg"
-import { IReview } from "../models/IReview"
+import qoutes from "../../assets/qoutes.svg"
+import { IReview } from "../../models/IReview"
 
 type SliderItemProps = {
   review: IReview,

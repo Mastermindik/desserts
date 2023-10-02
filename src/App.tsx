@@ -1,10 +1,10 @@
 import './App.scss'
-import Confectioner from './components/Confectioner'
-import Footer from './components/Footer'
-import OrderByPhoto from './components/OrderByPhoto'
-import Portfolio from './components/Portfolio'
-import Projects from './components/Projects'
-import Reviews from './components/Reviews'
+import Confectioner from './components/confectioner/Confectioner'
+import Footer from './components/footer/Footer'
+import OrderByPhoto from './components/orderByPhoto/OrderByPhoto'
+import Portfolio from './components/portfolio/Portfolio'
+import Projects from './components/projects/Projects'
+import Reviews from './components/reviews/Reviews'
 import Home from './components/home/Home'
 
 function App() {

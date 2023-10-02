@@ -1,7 +1,7 @@
-import "../styles/Reviews.scss"
-import cloudUp from "../assets/clouds/cloud-up.png"
-import cloudDown from "../assets/clouds/cloud-down.png"
-import Sliders from "./Sliders"
+import "../../styles/Reviews.scss"
+import cloudUp from "../../assets/clouds/cloud-up.png"
+import cloudDown from "../../assets/clouds/cloud-down.png"
+import Sliders from "../sliders/Sliders"
 
 function Reviews() {
   return (

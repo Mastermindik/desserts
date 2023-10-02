@@ -1,5 +1,5 @@
 import { ChangeEvent, Dispatch, useState } from "react"
-import Button from "./button/Button"
+import Button from "../button/Button"
 
 type ModalUploadPhotoProps = {
   setModalVisible: Dispatch<React.SetStateAction<boolean>>

@@ -1,9 +1,9 @@
-import "../styles/OrderByPhoto.scss"
-import cloudUp from "../assets/clouds/cloud-up.png"
-import cloudDown from "../assets/clouds/cloud-down.png"
-import phone from "../assets/phone.png"
-import Button from "./button/Button"
-import ModalUploadPhoto from "./ModalUploadPhoto"
+import "../../styles/OrderByPhoto.scss"
+import cloudUp from "../../assets/clouds/cloud-up.png"
+import cloudDown from "../../assets/clouds/cloud-down.png"
+import phone from "../../assets/phone.png"
+import Button from "../button/Button"
+import ModalUploadPhoto from "../modal/ModalUploadPhoto"
 import { useState } from "react"
 
 function OrderByPhoto() {

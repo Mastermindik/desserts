@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { ICake } from "../models/ICake";
-import Card from "./Card";
+import { ICake } from "../../models/ICake";
+import Card from "../card/Card";
 
 function Projects() {
   const [cakes, setCakes] = useState<ICake[]>();

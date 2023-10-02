@@ -1,4 +1,4 @@
-import Header from '../Header'
+import Header from '../header/Header'
 import styles from "./Home.module.scss"
 import Button from '../button/Button'
 

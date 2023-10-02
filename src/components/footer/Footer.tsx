@@ -1,5 +1,5 @@
-import cloudUp from "../assets/clouds/cloud-up.png"
-import Button from "./button/Button"
+import cloudUp from "../../assets/clouds/cloud-up.png"
+import Button from "../button/Button"
 
 function Footer() {
   return (

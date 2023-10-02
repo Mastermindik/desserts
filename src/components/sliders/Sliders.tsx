@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import { IReview } from "../models/IReview"
-import SliderItem from "./SliderItem";
+import { IReview } from "../../models/IReview"
+import SliderItem from "../sliderItem/SliderItem";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider, { Settings } from "react-slick";
-import NextArrow from "./NextArrow";
-import PrevArrow from "./PrevArrow";
+import NextArrow from "../nextArrow/NextArrow";
+import PrevArrow from "../prevArrow/PrevArrow";
 
 function Sliders() {
   const [reviews, setReviews] = useState<IReview[]>([]);
